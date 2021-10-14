@@ -1,0 +1,26 @@
+{
+  "name": "react-native-open-street-map",
+  "version": "1.0.0",
+  "main": "src/index.tsx",
+  "repository": "git@github.com:retyui/react-native-open-street-map.git",
+  "author": "David <4661784+retyui@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "build-ts": "tsc -w -p tsconfig.web.json --outDir ./examples/OpenStreetMap/lib",
+    "concat-webview-code": "tsc -w -p tsconfig.web.json --outDir ./examples/OpenStreetMap/lib",
+    "build": "yarn build-ts & npx gulp watch"
+  },
+  "devDependencies": {
+    "@tsconfig/react-native": "^1.0.3",
+    "@types/leaflet": "^1.7.5",
+    "@types/react": "^16.14.15",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-replace": "^1.1.3",
+    "gulp-terser": "^2.1.0",
+    "react-native": "^0.65.1",
+    "react-native-test-app": "^0.9.0",
+    "react-native-webview": "^11.13.1",
+    "typescript": "^4.4.3"
+  }
+}

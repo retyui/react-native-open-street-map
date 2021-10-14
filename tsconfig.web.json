@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "include": [
+    "./examples/OpenStreetMap/src/*.webview.ts",
+    "./examples/OpenStreetMap/src/*.webview.tsx"
+  ],
+  "compilerOptions": {
+    "isolatedModules": false,
+    "skipLibCheck": true,
+    "noEmit": false,
+    "module": "CommonJS",
+    "target": "ES5"
+  }
+}
